@@ -1,0 +1,37 @@
+
+#discs {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+#discs td, #discs th{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#discs tr:nth-child(even){
+    background-color: chocolate;
+}
+
+#discs tr:hover {
+background-color: brown;
+}
+
+#first-row {
+    animation: infinite;
+    animation-name: firstrow;
+    animation-duration: 1s;
+}
+
+@keyframes firstrow {
+    from {opacity: 1;}
+    to {opacity: 0.7;}
+}
+
+#discs th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: chocolate;
+}

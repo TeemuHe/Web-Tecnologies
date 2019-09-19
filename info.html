@@ -4,61 +4,68 @@
 <head>
     <title>Infosivu</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image.png"  href="favicon.png">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="icon" type="image.png" href="favicon.png">
 
 </head>
 
-<div class="navbar">
+<body>
+
+
+    <nav class="navbar">
         <a href="index.html">Etusivu</a>
-        <a href="contact.html">Kontakti</a>
+        <a href="contact.html">Etsi</a>
         <a href="info.html">Info</a>
-</div>
-<header>
-    <h1>Kotisivut</h1>
-    <h1>Info</h1>
-</header>
+    </nav>
 
-<main>
-    <section>
-        <h3><strong>Tärkeää tietoa</strong></h3>
-        <img src="tarkeatohjeet.jpg" width="300" height="150">
+    <header>
+        <h1>Kotisivut</h1>
+        <h1>Info</h1>
+    </header>
 
-    </section>
+    <main>
+        <section>
+            <h3><strong>Tärkeää tietoa</strong></h3>
+            <img src="tarkeatohjeet.jpg" width="300" height="150">
 
-    <section>
-        <table id="table1">
-            <tr>
-                <th>Vuosi</th>
-                <th>Kaupunki</th>
-                <th>Kapteeni</th>
-            </tr>
-            <tr>
-                <td>1995</td>
-                <td>Tukholma</td>
-                <td>Timo Jutila</td>
-            </tr>
-            <tr>
-                <td>2011</td>
-                <td>Bratislava</td>
-                <td>Mikko Koivu</td>
-            </tr>
-            <tr>
-                <td>2019</td>
-                <td>Bratislava</td>
-                <td>Marko Anttila</td>
-            </tr>
-        </table>
-        <p><strong>Suomen maailmanmestaruudet</strong></p>
-    </section>
+        </section>
 
-    <section>
-        <a href="https://www.mansikkakarnevaalit.fi">
-            <img src="mansikka.jpg" width="600" height=300>
-        </a>
-    </section>
-</main>
+        <section>
+            <h3>Otsikko</h3>
+            <table id="discs">
+                <tr>
+                    <th>Nimi</th>
+                    <th>Tyyppi</th>
+                    <th>Ominaisuudet</th>
+                </tr>
+                <tr id="first-row">
+                    <td>Aviar</td>
+                    <td>Putter</td>
+                    <td>(2,3,0,0)</td>
+                </tr>
+                <tr>
+                    <td>Shark</td>
+                    <td>Midrange driver</td>
+                    <td>(5,4,0,0)</td>
+                </tr>
+                <tr>
+                    <td>Leopard</td>
+                    <td>Fairway driver</td>
+                    <td>(7,4,-1,1)</td>
+                </tr>
+            </table>
+            <p><strong></strong></p>
+        </section>
 
+        <section>
+            <a href="https://www.mansikkakarnevaalit.fi">
+                <img src="mansikka.jpg" width="400" height=200>
+            </a>
+        </section>
+    </main>
+</body>
 <footer>
     <p>&copy; 2019 Teemu Heikkinen</p>
     <address>
