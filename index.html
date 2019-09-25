@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    
     <nav class="navbar">
         <a href="index.html">Etusivu</a>
         <a href="contact.html">Etsi</a>
@@ -38,7 +40,21 @@
                 <li><a href="https://www.foreca.fi/">Foreca</a></li>
             </ul>
         </section>
+       <section>
+           <h3>Sijainti</h3>
+        Osoite:
+        <input type="text" id="address"
+        placeholder="Syötä osoite">
+        Kaupunki:   
+        <input type="text" id="city" placeholder="Syötä kaupunki">
+           <input type="button" id="show" value="Näytä" onclick="readLocation()">
+           <br>
+           <iframe src="https://www.google.com/maps?q=' + address + city + '&output=embed" frameborder="10"
+           id="mapFrame" width="500" height="350"></iframe>
+       </section>
+        
     </main>
+    <script src="js/demo.js"></script>
 </body>
 <footer>
     <p>&copy; 2019 Teemu Heikkinen</p>

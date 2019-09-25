@@ -26,28 +26,28 @@
 
     <main>
         <form href="contact.html">
-            Valmistaja: <br>
+            <!--Valmistaja: <br>
             <input type="text" name="producer" value="" size="20">
-            <br>
-            Nimi: <br>
-            <input type="text" name="name" value="" size="20">
-            <br>
+            <br>-->
+            Valitse kirjain a-d: <br>
+            <input type="text" id="myLetter" name="name" value="" size="20">
+            <input type="button" value="Valitse" onclick="writeLines();"><br><br>
+            Valitse numero väliltä 1-10: <br>
+            <input type="number" id="myNumberValue" name="number" value="" size="20">
+            <input type="button" value="Valitse" onclick="numberChecker();">
+            <!--<br>
             Tyyppi: <br>
             <input type="text" name="type" value="" size="20">
             <br>
             Muovi: <br>
             <input type="text" name="plastic" value="" size="20">
-            <br>
-            Ominaisuudet: <br>
-            <input type="text" name="speed" value="" size="1">
-            <input type="text" name="glide" value="" size="1">
-            <input type="text" name="turn" value="" size="1">
-            <input type="text" name="fade" value="" size="1">
             <br><br>
-            <input type="submit" value="Etsi">
+            <input type="button" value="Etsi" onclick="writeLines();">-->
         </form>
 
     </main>
+    <script src="js/demo.js"></script>
+
 </body>
 <footer>
     <p>&copy; 2019 Teemu Heikkinen</p>
