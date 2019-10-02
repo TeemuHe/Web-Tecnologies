@@ -12,8 +12,6 @@
 </head>
 
 <body>
-
-
     <nav class="navbar">
         <a href="index.html">Etusivu</a>
         <a href="contact.html">Etsi</a>
@@ -25,17 +23,18 @@
     </header>
 
     <main>
-        <form href="contact.html">
-            <!--Valmistaja: <br>
+        <section>
+            <form href="contact.html">
+                <!--Valmistaja: <br>
             <input type="text" name="producer" value="" size="20">
             <br>-->
-            Valitse kirjain a-d: <br>
-            <input type="text" id="myLetter" name="name" value="" size="20">
-            <input type="button" value="Valitse" onclick="writeLines();"><br><br>
-            Valitse numero väliltä 1-10: <br>
-            <input type="number" id="myNumberValue" name="number" value="" size="20">
-            <input type="button" value="Valitse" onclick="numberChecker();">
-            <!--<br>
+                Valitse kirjain a-d: <br>
+                <input type="text" id="myLetter" name="name" value="" size="20">
+                <input type="button" value="Valitse" onclick="writeLines();"><br><br>
+                Valitse numero väliltä 1-10: <br>
+                <input type="number" id="myNumberValue" name="number" value="" size="20">
+                <input type="button" value="Valitse" onclick="numberChecker();">
+                <!--<br>
             Tyyppi: <br>
             <input type="text" name="type" value="" size="20">
             <br>
@@ -43,11 +42,23 @@
             <input type="text" name="plastic" value="" size="20">
             <br><br>
             <input type="button" value="Etsi" onclick="writeLines();">-->
-        </form>
+            </form>
+        </section>
+
+        <section>
+            <br>
+            <input type="button" id="decBtn1" onclick="decreaseNr1()" value="-">
+            <input type="text" id="firstNumber" name="number" value="" size="5">
+            <input type="button" id="incBtn1" onclick="increaseNr1()" value="+">
+            <br><br>
+            <input type="button" id="decBtn2" onclick="decreaseNr2()" value="-">
+            <input type="text" id="secondNumber" name="number" value="" size="5">
+            <input type="button" id="incBtn2" onclick="increaseNr2()" value="+">
+        </section>
 
     </main>
     <script src="js/demo.js"></script>
-
+    
 </body>
 <footer>
     <p>&copy; 2019 Teemu Heikkinen</p>
