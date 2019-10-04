@@ -32,27 +32,87 @@ function readLocation() {
 }
 function decreaseNr1() {
     var firstNumber = document.getElementById("firstNumber").value;
-    var newValue = firstNumber - 1;
-    document.getElementById("firstNumber").value = newValue;
-    console.log(newValue);
+    $(firstNumber).ready(function(){
+        if (firstNumber < 1) {
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian pientä numeroa!</p></div>';
+          $('body').append(dialog);
+          $("#dialog").dialog({
+            buttons: {
+              "OK": function () {
+                  $(this).dialog("close");
+              }
+            }
+         });
+       }
+       else{
+        var newValue = firstNumber - 1;
+        document.getElementById("firstNumber").value = newValue;
+        console.log(newValue);
+       }
+      });
 }
 function increaseNr1() {
     var firstNumber = document.getElementById("firstNumber").value;
-    var newValue = Number(firstNumber) + 1;
-    document.getElementById("firstNumber").value = newValue;
-    console.log(newValue);
+    $(firstNumber).ready(function(){
+        if (firstNumber >= 10) {
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian suurta numeroa!</p></div>';
+          $('body').append(dialog);
+          $("#dialog").dialog({
+            buttons: {
+              "OK": function () {
+                  $(this).dialog("close");
+              }
+            }
+         });
+       }
+       else{
+        var newValue = Number(firstNumber) + 1;
+        document.getElementById("firstNumber").value = newValue;
+        console.log(newValue);
+       }
+      });
 }
 function decreaseNr2() {
     var secondNumber = document.getElementById("secondNumber").value;
-    var newValue = secondNumber - 1;
-    document.getElementById("secondNumber").value = newValue;
-    console.log(newValue);
+    $(secondNumber).ready(function(){
+        if (secondNumber < 1) {
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian pientä numeroa!</p></div>';
+          $('body').append(dialog);
+          $("#dialog").dialog({
+            buttons: {
+              "OK": function () {
+                  $(this).dialog("close");
+              }
+            }
+         });
+       }
+       else{
+        var newValue = secondNumber - 1;
+        document.getElementById("secondNumber").value = newValue;
+        console.log(newValue);
+       }
+      });
 }
 function increaseNr2() {
     var secondNumber = document.getElementById("secondNumber").value;
-    var newValue = Number(secondNumber) + 1;
-    document.getElementById("secondNumber").value = newValue;
-    console.log(newValue);
+    $(secondNumber).ready(function(){
+        if (secondNumber >= 10) {
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian suurta numeroa!</p></div>';
+          $('body').append(dialog);
+          $("#dialog").dialog({
+            buttons: {
+              "OK": function () {
+                  $(this).dialog("close");
+              }
+            }
+         });
+       }
+       else{
+        var newValue = Number(secondNumber) + 1;
+        document.getElementById("secondNumber").value = newValue;
+        console.log(newValue);
+       }
+      });
 }
 window.onload = function () {
     this.getRndInteger();
@@ -60,4 +120,24 @@ window.onload = function () {
 function getRndInteger() {
     document.getElementById('firstNumber').value = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
     document.getElementById('secondNumber').value = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    /*console.log(document.getElementById('firstNumber').value);
+    console.log(document.getElementById('plusOrMinus').value);
+    console.log(document.getElementById('secondNumber').value);*/
+}
+function calculate() {
+    console.log(document.getElementById('firstNumber').value);
+    console.log(document.getElementById('plusOrMinus').value);
+    console.log(document.getElementById('secondNumber').value);
+
+    var number1 = Number(document.getElementById("firstNumber").value);
+    var number2 = Number(document.getElementById("secondNumber").value);
+    if (document.getElementById('plusOrMinus').value == "plus") {
+        var finalAnswer = number1 + number2;
+        console.log(finalAnswer);
+    }
+    else {
+        var finalAnswer = number1 - number2;
+        console.log(finalAnswer);
+    }
+    document.getElementById("answer").value = finalAnswer;
 }
