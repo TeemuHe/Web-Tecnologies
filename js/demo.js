@@ -34,7 +34,7 @@ function decreaseNr1() {
     var firstNumber = document.getElementById("firstNumber").value;
     $(firstNumber).ready(function(){
         if (firstNumber < 1) {
-          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian pientä numeroa!</p></div>';
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Virheellinen luku!</p></div>';
           $('body').append(dialog);
           $("#dialog").dialog({
             buttons: {
@@ -55,7 +55,7 @@ function increaseNr1() {
     var firstNumber = document.getElementById("firstNumber").value;
     $(firstNumber).ready(function(){
         if (firstNumber >= 10) {
-          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian suurta numeroa!</p></div>';
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Virheellinen luku!</p></div>';
           $('body').append(dialog);
           $("#dialog").dialog({
             buttons: {
@@ -76,7 +76,7 @@ function decreaseNr2() {
     var secondNumber = document.getElementById("secondNumber").value;
     $(secondNumber).ready(function(){
         if (secondNumber < 1) {
-          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian pientä numeroa!</p></div>';
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Virheellinen luku!</p></div>';
           $('body').append(dialog);
           $("#dialog").dialog({
             buttons: {
@@ -97,7 +97,7 @@ function increaseNr2() {
     var secondNumber = document.getElementById("secondNumber").value;
     $(secondNumber).ready(function(){
         if (secondNumber >= 10) {
-          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Älä laita liian suurta numeroa!</p></div>';
+          var dialog = '<div id="dialog" title="HUOMIO" style="display:none"><p>Virheellinen luku!</p></div>';
           $('body').append(dialog);
           $("#dialog").dialog({
             buttons: {
