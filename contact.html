@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" type="image.png" href="favicon.png">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/sunny/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
     <script>
-    $( function() {
-      $( "#dialog" ).dialog();
-    } );
+        $(function () {
+            $("#dialog").dialog();
+        });
     </script>
 </head>
 
@@ -23,7 +26,7 @@
         <a href="contact.html">Etsi</a>
         <a href="info.html">Info</a>
     </nav>
-    
+
     <header>
         <h1>Kotisivut</h1>
         <h2>Hae</h2>
@@ -57,11 +60,11 @@
             <input type="button" id="decBtn1" onclick="decreaseNr1()" value="-">
             <input type="number" id="firstNumber" name="number" value="" size="5">
             <input type="button" id="incBtn1" onclick="increaseNr1()" value="+">
-            <br><br>   
+            <br><br>
             <select id="plusOrMinus">
                 <option value="plus">+</option>
                 <option value="minus">-</option>
-            </select>         
+            </select>
             <br><br>
             <input type="button" id="decBtn2" onclick="decreaseNr2()" value="-">
             <input type="number" id="secondNumber" name="number" value="" size="5">
