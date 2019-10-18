@@ -30,7 +30,27 @@ function readLocation() {
   var city = document.getElementById("city").value;
   document.getElementById('mapFrame').src = 'https://www.google.com/maps?q=' + address + city + '&output=embed';
 }
-
+/*function decreaseNr(number) {
+  var number = document.getElementById(number).value;
+  $(number).ready(function() {
+    if(number < 1) {
+      var dialog = '<div id="dialog" title="HUOMIO" style="display:none">Virheellinen luku!</div>';
+      $('body').append(dialog);
+      $('#dialog').dialog({
+        buttons: {
+          "OK": function () {
+            $(this).dialog("close");
+          }
+        }
+      });
+    }
+    else {
+      var newValue = number - 1;
+      document.getElementById(number).value = newValue;
+      console.log(newValue);
+    }
+  })
+}*/
 
 function decreaseNr1() {
   var firstNumber = document.getElementById("firstNumber").value;
@@ -134,8 +154,16 @@ function calculate() {
     var finalAnswer = number1 + number2;
     console.log(finalAnswer);
   }
-  else {
+  else if(document.getElementById('plusOrMinus').value == "minus"){
     var finalAnswer = number1 - number2;
+    console.log(finalAnswer);
+  }
+  else if(document.getElementById('plusOrMinus').value == "multiple"){
+    var finalAnswer = number1 * number2;
+    console.log(finalAnswer);
+  }
+  else {
+    var finalAnswer = number1 / number2;
     console.log(finalAnswer);
   }
   document.getElementById("answer").value = finalAnswer;

@@ -1,0 +1,13 @@
+.imageText {
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.slideShowButtons {
+    width: 200px;
+    text-align: center;
+}
+
+.buttons {
+    background-color: violet;
+}
