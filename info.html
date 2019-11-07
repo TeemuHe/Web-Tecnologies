@@ -103,7 +103,8 @@
 
                 <div class="slideShowButtons">
                     <button class="buttons" onclick="changeImage(-1)"><i class='fas fa-step-backward'></i></button>
-                    <button id="buttons" class="slideShowBtn" onclick="playSlideshow(1)"><i class='fas fa-play-circle'></i></button>
+                    <button id="buttons" class="slideShowBtn" onclick="playSlideshow(1)"><i
+                            class='fas fa-play-circle'></i></button>
                     <button class="buttons" onclick="changeImage(1)"><i class='fas fa-step-forward'></i></button>
                 </div>
             </div>
@@ -116,8 +117,19 @@
             </a>
         </section>
 
-
+        <section>
+            <h3>Kello</h3>
+            <div class="inner">
+                Kello on:
+                <p id="currentTime"></p>
+                <label>Laita hälytys</label>
+                <input type="time" id="alarmTime">
+                <button type="button" onclick="setAlarm()">Aseta</button>
+            </div>
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </section>
     </main>
+    <script src="js/timer.js"></script>
     <script src="js/carousel.js"></script>
 </body>
 <footer>
