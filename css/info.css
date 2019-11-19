@@ -27,3 +27,14 @@
 .canvas {
     margin-left: 50px;
 }
+
+#alarmAnimation {
+    animation: infinite;
+    animation-name: alarmAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes alarmAnimation {
+    from {opacity: 1;}
+    to {opacity: 0.4;}
+}
