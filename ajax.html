@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Numerosivu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ajax.css">
+    <link rel="icon" type="image.png" href="favicon.png">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Etusivu</a>
+        <a href="contact.html">Etsi</a>
+        <a href="info.html">Info</a>
+        <a href="images.html">Kuvia</a>
+        <a href="ajax.html">Numeroita</a>
+    </nav>
+    <header>
+        <h1>Kotisivut</h1>
+        <h1>Numbers And Jokes</h1>
+    </header>
+    <main>
+        <section>
+
+            <div id="btnDiv">
+                <p class="btnInfo"><strong>Press button to get a random number</strong> </p>
+                <button id="btn">Get Random Number</button>
+            </div>
+
+            <div id="gif">
+                <img src="ajax-loader.gif">
+            </div>
+
+            <div id="numberInfo"></div>
+        </section>
+        <section>
+
+            <div id="btnDiv">
+                <p class="btnInfo"><strong>Press button to get a joke</strong></p>
+                <button id="jokeBtn">Get Joke</button>
+                
+            </div>
+
+            <div id="gif2">
+                <img src="ajax-loader2.gif">
+            </div>
+
+            <div id="theJoke"></div>
+        </section>
+        <section>
+            <p id="counter">Joke Counter:
+            </p>
+        </section>
+
+    </main>
+    <script src="js/numbers.js"></script>
+</body>
+<footer>
+    <p>&copy; 2019 Teemu Heikkinen</p>
+    <address>
+        <a href="mailto:jaskajokunen@sposti.com">Sähköpostia Jokusen Jaskalle</a><br>
+        <a href="tel:+123456789">(040) 123-4567</a>
+    </address>
+</footer>
+
+</html>
