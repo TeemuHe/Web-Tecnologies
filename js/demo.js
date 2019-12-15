@@ -1,3 +1,5 @@
+var code;
+
 function writeLines() {
   //console.log((Date()));
   //alert("Ilmoitus!");
@@ -167,4 +169,33 @@ function calculate() {
     console.log(finalAnswer);
   }
   document.getElementById("answer").value = finalAnswer;
+}
+
+/*$("myInput").keyup(function() {
+  var value = $(this).val();
+}).keyup();*/
+
+function textCode() {
+  var code = document.getElementById("myInput").value;
+  if(code.length == 4) {
+    document.getElementById("myInput2").focus();
+  }
+  var code2 = document.getElementById("myInput2").value;
+  if(code2.length == 4) {
+    document.getElementById("myInput3").focus();
+  }
+  var code3 = document.getElementById("myInput3").value;
+  if(code3.length == 4) {
+    document.getElementById("fullCode").innerHTML = "Viimeisin koodi: " + code + " " + code2 + " " + code3;
+  }
+}
+
+function clearCode() {
+  document.getElementById("myInput").value = '';
+  document.getElementById("myInput2").value = '';
+  document.getElementById("myInput3").value = '';
+}
+
+function wrongInput() {
+  document.getElementById("myInput").focus();
 }

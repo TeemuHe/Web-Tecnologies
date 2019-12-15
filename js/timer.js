@@ -1,7 +1,7 @@
 var alarmHour;
 var alarmMin;
 var alert = document.getElementById("player");
-var alarmBoolean = false;
+var alarmBoolean = true;
 
 function init() {
   time();
@@ -21,21 +21,25 @@ function setAlarm() {
   console.log(alarm);
   alarmHour = alarm.substring(0, 2);
   alarmMin = alarm.substring(3, 5);
-  console.log(alarmMin);
+  
 }
 
 function playSound() {
-  alert.play();
-  alarmBoolean = true;
-  console.log("Hälyttää");
+  if (alarmBoolean == true) {
+    alert.play();
+    console.log(alarmBoolean);
+    console.log("Hälyttää");
+  }
+
 }
 
 function stopAlarm() {
   if (alarmBoolean == true) {
     alarmBoolean = false;
     alert.pause();
+    console.log("Lopetettu");
   }
-  console.log("Lopetettu");
+
 }
 
 setInterval(time, 1000);
@@ -83,7 +87,6 @@ function clock() {
   var hr = now.getHours();
 
   if (min == alarmMin && hr == alarmHour) {
-    console.log("hälytys");
     playSound();
   }
   hr = hr >= 12 ? hr - 12 : hr;

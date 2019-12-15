@@ -3,3 +3,11 @@ input {
     font-size: 16px;
     line-height: 1,6em;
 }
+
+section {
+    margin-left: 20px;
+}
+
+.myInput {
+    width: 50px;
+}

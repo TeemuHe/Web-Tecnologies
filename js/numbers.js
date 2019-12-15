@@ -47,6 +47,7 @@ $("#jokeBtn").click(function () {
             
             $("#theJoke").append("<br><br>" + "<i>" + response.value.joke + "</i>");
 
+        
             index++;
             console.log(index);
             $("#counter").html("<i>" + "Joke Counter:<br>" + index + "</i>");

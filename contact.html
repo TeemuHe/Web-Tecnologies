@@ -78,7 +78,15 @@
             <br><br>
             <input type="text" id="answer" value="" placeholder="Vastaus..." size="5">
         </section>
-
+        <section>
+            <br>Syötä koodi
+            <input type="text" id="myInput" class="myInput" maxlength="4" onkeyup="textCode()">
+            <input type="text" id="myInput2" class="myInput" maxlength="4" onkeyup="textCode()" onclick="wrongInput()">
+            <input type="text" id="myInput3" class="myInput" maxlength="4" onkeyup="textCode()" onclick="wrongInput()">
+            <br>
+            <button onclick="clearCode()">Tyhjennä</button>
+            <div id="fullCode"></div>
+        </section>
     </main>
     <script src="js/demo.js"></script>
 </body>
